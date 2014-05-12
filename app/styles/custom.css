@@ -139,12 +139,21 @@ button.et-rotate {
 }
 /*-----------------END-OF---TRANSITION DEMO---------------------------*/
 
+/*-------------------SECTIONS-----------------------------------------*/
+
+/*------------------END OF-SECTIONS-----------------------------------*/
+body{background: #003D5C;}
+body * {color:#FFFFFF;}
+/*#about{background:#0097AD;}
+#passion{background:#0097AD;}*/
+.content{padding:none;}
+
 /*-----------------MALIHU SCROLL BARS----------------*/
 /*.output a{display:inline-block; text-decoration:none; padding:3px 15px; -webkit-border-radius:15px; -moz-border-radius:15px; border-radius:15px; background:#000; margin:5px 20px 5px 0;}
 		code{color:#5b70ff;}*/
 .content{ height:768px; overflow:auto;  -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
-.content p:nth-child(even){color:#999; font-family:Georgia,serif; font-size:17px; font-style:italic;}
-.content p:nth-child(3n+0){color:#c96;}
+/*.content p:nth-child(even){color:#999; font-family:Georgia,serif; font-size:17px; font-style:italic;}
+.content p:nth-child(3n+0){color:#c96;}*/
 .content .content{width:100%;   -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
 .content .content .content{background:#191919;}
 /*-----------END OF------MALIHU SCROLL BARS----------------*/
