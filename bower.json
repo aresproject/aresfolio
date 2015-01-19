@@ -2,14 +2,29 @@
   "name": "aresfolio",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "~3.1.0",
-    "modernizr": "~2.6.2",
-    "jquery": "~1.11.0",
-    "malihu-custom-scrollbar-plugin": "~2.8.3",
+    "ElementTransitions.js": "*",
+    "maplace.js": "~0.1.2",
+    "onepage-scroll": "~1.1.1",
+    "malihu-custom-scrollbar-plugin": "~3.0.0",
     "highcharts.com": "~4.0.0"
   },
-  "devDependencies": {},
-  "resolutions": {
-    "jquery": ">=1.2.2"
-  }
+  "version": "0.0.1",
+  "homepage": "https://github.com/aresproject/aresfolio",
+  "authors": [
+    "aresproject <aresproj3ct@gmail.com>"
+  ],
+  "description": "my portfolio project in yeoman",
+  "main": "index.html",
+  "keywords": [
+    "folio"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
 }

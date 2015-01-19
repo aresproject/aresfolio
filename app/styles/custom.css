@@ -29,7 +29,7 @@
 .left-content  .row{
 	/*border:1px solid red;*/
 	min-height:800px;
-	padding:0px 5px 0px 10px;
+	padding:0px 10px 0px 10px;
 	
 }
 
@@ -76,10 +76,10 @@
 {
     display: block;
 }
-#myCarousel .nav
-{
-    background: #eee;
-}
+
+#myCarousel .nav {background: #2B83AE !important;}
+#myCarousel .nav li:hover, #myCarousel .nav li a:hover{background: orange !important;}
+
 .nav-justified > li > a
 {
     /*border-radius: 0px;*/

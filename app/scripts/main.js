@@ -15,16 +15,16 @@
 				});
 				$(".output a[rel~='about']").click(function(e){
 					e.preventDefault();
-					$(".content").mCustomScrollbar("scrollTo","#about");
-					$(".content").mCustomScrollbar("scrollTo",$(this).attr("href"));
+					$(".left-content").mCustomScrollbar("scrollTo","#about");
+					$(".left-content").mCustomScrollbar("scrollTo",$(this).attr("href"));
 				});
 				$(".output a[rel~='contact']").click(function(e){
 					e.preventDefault();
-					$(".content").mCustomScrollbar("scrollTo","#contact");
+					$(".left-content").mCustomScrollbar("scrollTo","#contact");
 				});
-				$(".output a[rel~='skills']").click(function(e){
+				$(".output a[rel~='motive']").click(function(e){
 					e.preventDefault();
-					$(".content").mCustomScrollbar("scrollTo","#skills");
+					$(".left-content").mCustomScrollbar("scrollTo","#motive");
 				});
 				$(".output a[rel~='passion']").click(function(e){
 					e.preventDefault();
@@ -55,7 +55,7 @@ $(function () { //PIE CHART
                 plotShadow: false
             },
             title: {
-                text: 'Programming'
+                text: 'Skill Areas'
             },
             tooltip: {
         	    pointFormat: '{series.name}: {point.percentage}%',
@@ -79,11 +79,9 @@ $(function () { //PIE CHART
                 type: 'pie',
                 name: 'Skill Set',
                 data: [
-                    ['PHP \u0026 MySQL',   28.00],
-                    ['HTML \u0026 CSS',       26.00],
-                    ['Javascript',       10.00],
-                    ['MS .NET',    18.00],
-                    ['MSSQL',     18.00],
+                    ['Sys Development',   45.00],
+                    ['Graphics \u0026 Design',       25.00],
+                    ['Project Management',       30.00]
                 ]
             }]
         });
