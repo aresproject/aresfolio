@@ -1,49 +1,50 @@
 // "use strict";!function(a){a(window).load(function(){a(".content").mCustomScrollbar({scrollButtons:{enable:!0},callbacks:{onScroll:function(){a("."+this.attr("id")+"-pos").text(mcs.top)}}}),a(".output a[rel~='about']").click(function(b){b.preventDefault(),a(".content").mCustomScrollbar("scrollTo","#about"),a(".content").mCustomScrollbar("scrollTo",a(this).attr("href"))}),a(".output a[rel~='contact']").click(function(b){b.preventDefault(),a(".content").mCustomScrollbar("scrollTo","#contact")}),a(".output a[rel~='passion']").click(function(b){b.preventDefault(),a(".right-content").mCustomScrollbar("scrollTo","#passion")}),a(".output a[rel~='portfolio']").click(function(b){b.preventDefault(),a(".right-content").mCustomScrollbar("scrollTo","#portfolio")}),a(".output a[rel~='exp']").click(function(b){b.preventDefault(),a(".right-content").mCustomScrollbar("scrollTo","#exp")}),a(".output a[rel~='graph']").click(function(b){b.preventDefault(),a(".right-content").mCustomScrollbar("scrollTo","#graph")})})}(jQuery);
 'use strict';
-		
+        
 (function($){
-			$(window).load(function(){
-				$(".content").mCustomScrollbar({
-					scrollButtons:{
-						enable:true
-					},
-					callbacks:{
-						onScroll:function(){ 
-							$("."+this.attr("id")+"-pos").text(mcs.top);
-						}
-					}
-				});
-				$(".output a[rel~='about']").click(function(e){
-					e.preventDefault();
-					$(".left-content").mCustomScrollbar("scrollTo","#about");
-					$(".left-content").mCustomScrollbar("scrollTo",$(this).attr("href"));
-				});
-				$(".output a[rel~='contact']").click(function(e){
-					e.preventDefault();
-					$(".left-content").mCustomScrollbar("scrollTo","#contact");
-				});
-				$(".output a[rel~='motive']").click(function(e){
-					e.preventDefault();
-					$(".left-content").mCustomScrollbar("scrollTo","#motive");
-				});
-				$(".output a[rel~='passion']").click(function(e){
-					e.preventDefault();
-					$(".right-content").mCustomScrollbar("scrollTo","#passion");
-				});
-				$(".output a[rel~='portfolio']").click(function(e){
-					e.preventDefault();
-					$(".right-content").mCustomScrollbar("scrollTo","#portfolio");
-				});
-				$(".output a[rel~='exp']").click(function(e){
-					e.preventDefault();
-					$(".right-content").mCustomScrollbar("scrollTo","#exp");
-				});
-				$(".output a[rel~='graph']").click(function(e){
-					e.preventDefault();
-					$(".right-content").mCustomScrollbar("scrollTo","#graph");
-				});
-			});
-		})(jQuery);
+    $(window).load(function(){
+        $(".content").mCustomScrollbar({
+            scrollButtons:{
+                enable:true
+            },
+            callbacks:{
+                onScroll:function(){ 
+                    $("."+this.attr("id")+"-pos").text(mcs.top);
+                }
+            },
+            setHeight:650
+        });
+        $(".output a[rel~='about']").click(function(e){
+            e.preventDefault();
+            $(".left-content").mCustomScrollbar("scrollTo","#about");
+            $(".left-content").mCustomScrollbar("scrollTo",$(this).attr("href"));
+        });
+        $(".output a[rel~='contact']").click(function(e){
+            e.preventDefault();
+            $(".left-content").mCustomScrollbar("scrollTo","#contact");
+        });
+        $(".output a[rel~='blog']").click(function(e){
+            e.preventDefault();
+            $(".left-content").mCustomScrollbar("scrollTo","#blog");
+        });
+        $(".output a[rel~='passion']").click(function(e){
+            e.preventDefault();
+            $(".right-content").mCustomScrollbar("scrollTo","#passion");
+        });
+        $(".output a[rel~='portfolio']").click(function(e){
+            e.preventDefault();
+            $(".right-content").mCustomScrollbar("scrollTo","#portfolio");
+        });
+        $(".output a[rel~='exp']").click(function(e){
+            e.preventDefault();
+            $(".right-content").mCustomScrollbar("scrollTo","#exp");
+        });
+        $(".output a[rel~='graph']").click(function(e){
+            e.preventDefault();
+            $(".right-content").mCustomScrollbar("scrollTo","#graph");
+        });
+    });
+})(jQuery);
 $(function () { //PIE CHART
     var chart;
     $(document).ready(function() {
@@ -52,14 +53,15 @@ $(function () { //PIE CHART
                 renderTo: 'chart_pie',
                 plotBackgroundColor: null,
                 plotBorderWidth: null,
+                backgroundColor: null,
                 plotShadow: false
             },
             title: {
                 text: 'Skill Areas'
             },
             tooltip: {
-        	    pointFormat: '{series.name}: {point.percentage}%',
-            	percentageDecimals: 1
+                pointFormat: '{series.name}: {point.percentage}%',
+                percentageDecimals: 1
             },
             plotOptions: {
                 pie: {
@@ -93,6 +95,7 @@ $(function () { //BAR CHART
         chart = new Highcharts.Chart({
             chart: {
                 renderTo: 'chart_bar',
+                backgroundColor: null,
                 type: 'bar'
             },
             title: {
@@ -154,6 +157,7 @@ $(function () { //COLUMN CHART
         chart = new Highcharts.Chart({
             chart: {
                 renderTo: 'chart_column',
+                backgroundColor: null,
                 type: 'column'
             },
             title: {
@@ -212,6 +216,7 @@ $(function () { //LINE CHART
                 renderTo: 'chart_line',
                 type: 'line',
                 marginRight: 130,
+                backgroundColor: null,
                 marginBottom: 25
             },
             title: {
