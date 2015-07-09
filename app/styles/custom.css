@@ -1,4 +1,13 @@
-*{font-family:"segoe UI" !important;}
+
+
+
+h1, .navbar-brand, ul li a{font-family: "Racing Sans One"; color:#2B83AE;}
+.navbar-brand {font-size: 25px !important;}
+h2{font-family:"Racing Sans One"; }
+p{font-family:"Montserrat";}
+ul li a {font-size: 16px;}
+.glyphicon {margin-right: 10px !important;}
+
 .sidebar {
 	background-image: url(../img/imageSprite.png);
 	background-position: 0px 0px;
@@ -9,7 +18,7 @@
 	left: 0px;
 	top: 0px;
 	z-index: 100;
-	background:#2D2D2D;
+	background:#FFFFFF;
 	}
 	
 	.nav li{display:inline important;}
@@ -18,6 +27,7 @@
 	position:relative;
 	height: 100%;
 	background: url(../img/bgWhite20.png);
+	  background-color: #0F86C3;
 	overflow:auto;
 	left:160px;
 	top: 0px;
@@ -29,14 +39,20 @@
 .left-content  .row{
 	/*border:1px solid red;*/
 	min-height:800px;
-	padding:0px 10px 0px 10px;
+	padding:35px 10px 0px 10px;
 	
 }
+
+.left-content h2{
+	color:#FFFFFF;}
+
+.left-content p{margin-right: 5px;}
 
 .row{margin-left: 0px; margin-left: 0px;}
 
 .social{margin-bottom: 15px;}
-.social ul li{display:inline; margin-right:5px; }
+.social ul {list-style: none;}
+.social ul li{ display: inline-block; margin-right:5px; }
 
 .right-content{
 	position: relative;
@@ -44,7 +60,7 @@
 	right: 0;
 	bottom: 0;
 	left: 150px;
-	
+	background: url("/images/bg/mac.jpg") #3334FE no-repeat; 
 	
 	/*-moz-perspective: 1200px;
 	-webkit-perspective: 1200px;
@@ -62,12 +78,13 @@
 	display:block;
 	min-height: 800px;
 	width: 100%;
+	padding:35px 10px 0px 10px;
 }
 
 .nav{margin-top: 10px;}
 
 .sidebar h1{font-size: 4em; text-align:center;}
-.subtitle{font-size:12px; color:#66CCFF; display:block; text-align:center;} 
+.subtitle{font-size:16px; color:#66CCFF; display:block; text-align:center;} 
 
 .techs a img{margin:15px 15px;}
 
@@ -93,7 +110,8 @@
 /*----------------------TRANSITION DEMO-------------------------------*/
 body {
   font-family: 'Lato', Calibri, Arial, sans-serif;
-  padding: 50px;
+  padding: 0px 50px 0px 50px;
+  overflow:hidden;
 }
 
 button.et-rotate {
@@ -145,19 +163,51 @@ button.et-rotate {
 /*-------------------SECTIONS-----------------------------------------*/
 
 /*------------------END OF-SECTIONS-----------------------------------*/
-body{background: #003D5C;}
-body * {color:#FFFFFF;}
+body{background: #003D5C ;}
+body p {color:#FFFFFF;}
+.right-content p {color:#003D5C;}
 /*#about{background:#0097AD;}
 #passion{background:#0097AD;}*/
-.content{padding:none;}
+
 
 /*-----------------MALIHU SCROLL BARS----------------*/
 /*.output a{display:inline-block; text-decoration:none; padding:3px 15px; -webkit-border-radius:15px; -moz-border-radius:15px; border-radius:15px; background:#000; margin:5px 20px 5px 0;}
 		code{color:#5b70ff;}*/
-.content{ height:768px; overflow:auto;  -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
+.content{ height: 630px; overflow:auto;  -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
 /*.content p:nth-child(even){color:#999; font-family:Georgia,serif; font-size:17px; font-style:italic;}
 .content p:nth-child(3n+0){color:#c96;}*/
 .content .content{width:100%;   -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
 .content .content .content{background:#191919;}
 /*-----------END OF------MALIHU SCROLL BARS----------------*/
+
+/*------------------RESPONSIVE LAYOUT----------------------*/
+@media only screen and (max-device-width: 990px) {
+	.left-content{
+		left:0px;
+	}
+	.right-content {
+	left: 0px;
+	}
+}
+
+@media only screen and (max-device-width: 480px) {
+	.left-content{
+		left:0px;
+	}
+	.right-content {
+	left: 0px;
+	}
+
+}
+
+@media only screen and (min-width: 1600px) {
+	.content {height: 778px !important;}
+
+}
+
+
+
+
+
+/*------------------END OF RESPONSIVE LAYOUT---------------*/
 
