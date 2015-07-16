@@ -1,14 +1,12 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>aresfolio</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/favicon.ico">
+        <link href='http://fonts.googleapis.com/css?family=Limelight|Racing+Sans+One|Montserrat|Passion+One|Droid+Sans' rel='stylesheet' type='text/css'>
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
@@ -18,97 +16,323 @@
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/custom.css">
+        <link rel="stylesheet" href="bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" />
+        <link rel="stylesheet" href="styles/demo.css" />
+        <link rel="stylesheet" href="styles/component.css" />
         <!-- endbuild -->
+
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
-
+        
     </head>
     <body>
-        <!--[if lt IE 10]>
+        
+       <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-
-        <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <h3 class="text-muted">aresfolio</h3>
-            </div>
-
-            <div class="jumbotron">
-                <h1>'Allo, 'Allo!</h1>
-                <p class="lead">Always a pleasure scaffolding your apps.</p>
-                <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
-            </div>
-
-            <div class="row marketing">
-                <div class="col-lg-6">
-                    <h4>HTML5 Boilerplate</h4>
-                    <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-                    <h4>Sass with Compass</h4>
-                    <p>Compass is an open-source CSS Authoring Framework that uses Sass.</p>
-
-
-                    <h4>Bootstrap</h4>
-                    <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-                    <h4>Modernizr</h4>
-                    <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-
+        <div class="visible-xs visible-sm">
+            <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Ar3s</a>
                 </div>
+                
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#about" rel="about">About</a></li>
+                        <li><a href="#passion" rel="passion">MyPassion</a></li>
+                        <li><a href="#portfolio" rel="portfolio">Portfolio</a></li>
+                        <li><a href="#blog" rel="blog">Blog</a></li>
+                        <li><a href="#exp" rel="exp">Work Experience</a></li>
+                        <li><a href="#graph" rel="graph">Skills Summary</a></li>
+                        <li><a href="#contact" rel="contact">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="sidebar visible-lg visible-md">
+            <h1>Ar3s</h1>
+            <span class="subtitle">{ its all in the state of mind }</span>
+            <div style="background: #FFFFFF;">
+            <img src="images/avatar-draw.jpg" class="img-responsive" alt="" style="margin:15px 15px 15px 35px;">
             </div>
-
-			<div class="container">
-				<div class="well">
-					<h3>What's the story morning glory!</h3>
-				</div>
-			</div>
-            <div class="footer">
-                <p><span class="glyphicon glyphicon-glass" style="font-size:20px;"></span> from the Yeoman team</p>
+            <div class="social">
+                    <ul style="list-style:none;">
+                        <li><a href="https://plus.google.com/115903530481224675510" target="_blank"><img src="images/logo/google-logo-xs.png" class="img-responsive" alt="ares-google"></a></li> 
+                        <li><a href="https://www.odesk.com/o/profiles/users/_~01b8b2ac800e53c2b8/" target="_blank"><img src="images/logo/upwork-logo-xs.png" class="img-responsive" alt="ares-odesk"></a></li>
+                        <li><a href="http://ph.linkedin.com/pub/aries-banastas/37/80/a6b/" target="_blank"><img src="images/logo/linkedin-logo-xs.png" class="img-responsive" alt="ares-linkedin"></a></li>
+                                 
+                        <li><a href="http://pinterest.com/abanastas/" target="_blank"><img src="images/logo/pinterest-logo-xs.png" alt="ares-pinterest" class="img-responsive"></a></li>
+                    </ul>
             </div>
+            <div class="nav">
+                <ul class="nav output">
+                    <li><a href="#about" rel="about"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>About</a></li>
+                    <li><a href="#passion" rel="passion"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span>MyPassion</a></li>
+                    <li><a href="#portfolio" rel="portfolio"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>Portfolio</a></li>
+                    <li><a href="#blog" rel="blog"><span class="glyphicon glyphicon-book" aria-hidden="true"></span>Blog</a></li>
+                    <li><a href="#exp" rel="exp"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>Work Experience</a></li>
+                    <li><a href="#graph" rel="graph"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span>Skills Summary</a></li>
+                    <li><a href="#contact" rel="contact"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-10 col-xs-12 left-content content">
+            <div id="about" class="row">
+                <h2>About</h2>
+                <p>Hi Welcome to my website, my name is Aries and I am an avid web developer & designer. I like to learn and apply trending workflows and frameworks in web development and dabbling in all sorts of software in creating graphics and multimedia presentation.</p>
 
+                <p> am an advocate of system development and project management methodologies.</p>
+
+                <p>I am self taught and a DIY guy when it comes to just about anything.</p>
+
+                <p>I aspire to be a successful entrepreneur one day and be able to teach and help other people to be successful in their life.</p>
+
+            </div>
+            <div id="blog" class="row">
+                <h2>My Blogs</h2>
+                <p>
+                    <em>"The starting point of all achievement is desire."</em>
+                    <span> - Napoleon Hill</span>
+                </p>
+                <p>
+                    <em>Death is nothing, but to live defeated and inglorious is to die daily.</em>
+                    <span> - Napoleon Bonaparte</span>
+                </p>
+                <p>
+                    <em>Success is not final, failure is not fatal: it is the courage to continue that counts.</em>
+                    <span> - Winston Churchill</span>
+                </p>
+                <p>
+                    <em>Attitude is a little thing that makes a big difference.</em>
+                    <span> - Winston Churchill</span>
+                </p>
+                <p>
+                    <em>History will be kind to me for I intend to write it.</em>
+                    <span> - Winston Churchill</span>
+                </p>
+
+            </div>
+            <div id="contact" class="row">
+                <h2>Contact Me</h2>
+                <div class="row">
+                  <div class="col-md-12">
+                      <p>email: aresproject@gmail.com</p>
+                      <p>skype: aresproj3ct</p>
+                  </div>
+                </div>
+                
+            </div>
+                
+            
+          
         </div>
 
+        <div class="col-lg-8 col-md-7 col-sm-10 col-xs-10 right-content content">
+            <div id="passion" class="row">
+                <h2>{ My Passion }</h2>
+                <p>I love anything about web development, I can spend countless of hours developing and learning more about the web. 
+                </p>
+                <p>
+                    There are still tons of about web design and development knowledge out there that im still learning, below are just some of the tools i have a good grasp of.
+                </p>
+                <div class="col-md-9 pull-right techs">
+                    <a href="http://www.getbootstrap.com" target="_blank"><img src="images/techs/bootstrap.png" alt=""></a>
+                    <a href="http://www.yeoman.io" target="_blank"><img src="images/techs/yeoman.png" alt=""></a>
+                    <a href="http://www.wordpress.org" target="_blank"><img src="images/techs/wordpress.png" alt=""></a>
+                    <a href="http://www.ellislab.com/codeigniter" target="_blank"><img src="images/techs/codeigniter.png" alt=""></a>
+                    <a href="http://www.adobe.com" target="_blank"><img src="images/techs/creative-suite6.png" alt=""></a>
+                    <a href="http://www.html5.com" target="_blank"><img src="images/techs/html5.png" alt=""></a>
+                    <a href="#" target="_blank"><img src="images/techs/javascript.png" alt=""></a>
+                    <a href="http://www.mysql.com" target="_blank"><img src="images/techs/mysql.png" alt=""></a>
+                    <a href="http://www.php.net" target="_blank"><img src="images/techs/php.png" alt=""></a>
+                    <a href="http://www.sass-lang.com" target="_blank"><img src="images/techs/sass.png" alt=""></a>
+                </div>
 
-        <!-- build:js scripts/vendor.js -->
-        <!-- bower:js -->
-        <script src="bower_components/jquery/dist/jquery.js"></script>
-        <!-- endbower -->
-        <!-- endbuild -->
+            </div>
+            <div id="portfolio" class="row">
+                <h2>Some of the projects that I'ved worked with...</h2>
+                <div id="grid-gallery" class="grid-gallery">
+                <section class="grid-wrap">
+                    <ul class="grid">
+                        <li class="grid-sizer"></li><!-- for Masonry column width -->
+                        <li>
+                            <figure>
+                                <img src="images/slide/thumb/slide1.png" alt="img01"/>
+                                <figcaption><h3>Letterpress asymmetrical</h3><p>Chillwave hoodie ea gentrify aute sriracha consequat.</p></figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/slide/thumb/slide2.png" alt="img02"/>
+                                <figcaption><h3>Vice velit chia</h3><p>Laborum tattooed iPhone, Schlitz irure nulla Tonx retro 90's chia cardigan quis asymmetrical paleo. </p></figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/slide/thumb/slide3.png" alt="img03"/>
+                                <figcaption><h3>Brunch semiotics</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/slide/thumb/forturity.jpg" alt="img04"/>
+                                <figcaption><h3>Chillwave nihil occupy</h3><p>In post-ironic gluten-free deserunt, PBR&amp;B non pork belly cupidatat polaroid. </p></figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/thumb/5.png" alt="img05"/>
+                                <figcaption><h3>Kale chips lomo biodiesel</h3><p>Pariatur food truck street art consequat sustainable, et kogi beard qui paleo. </p></figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/thumb/6.png" alt="img06"/>
+                                <figcaption><h3>Exercitation occaecat</h3><p>Street chillwave hoodie ea gentrify.</p></figcaption>
+                            </figure>
+                        </li>
+                        
+                    </ul>
+                </section><!-- // grid-wrap -->
+                <section class="slideshow">
+                    <ul>
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>
+                                <img src="images/slide/big/slide1.png" alt="img01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>Vice velit chia</h3>
+                                    <p>Chillwave Echo Park Etsy organic Cosby sweater seitan authentic pour-over. Occupy wolf selvage bespoke tattooed, cred sustainable Odd Future hashtag butcher.</p>
+                                </figcaption>
+                                <img src="images/slide/big/slide2.png" alt="img02"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>Brunch semiotics</h3>
+                                    <p>IPhone PBR polaroid before they sold out meh you probably haven't heard of them leggings tattooed tote bag, butcher paleo next level single-origin coffee photo booth.</p>
+                                </figcaption>
+                                <img src="images/slide/big/slide3.png" alt="img03"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>Chillwave nihil occupy</h3>
+                                    <p>Vice cliche locavore mumblecore vegan wayfarers asymmetrical letterpress hoodie mustache. Shabby chic lomo polaroid, scenester 8-bit Portland Pitchfork VHS tote bag.</p>
+                                </figcaption>
+                                <img src="images/slide/big/forturity.jpg" alt="img04"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>Kale chips lomo biodiesel</h3>
+                                    <p>Chambray Schlitz pug YOLO, PBR Tumblr semiotics. Flexitarian YOLO ennui Blue Bottle, forage dreamcatcher chillwave put a bird on it craft beer Etsy.</p>
+                                </figcaption>
+                                <img src="img/large/5.png" alt="img05"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>Exercitation occaecat</h3>
+                                    <p>Cosby sweater hella lomo Thundercats VHS occupy High Life. Synth pop-up readymade single-origin coffee, fanny pack tousled retro. Fingerstache mlkshk ugh hashtag, church-key ethnic street art pug yr.</p>
+                                </figcaption>
+                                <img src="img/large/6.png" alt="img06"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>Selfies viral four</h3>
+                                    <p>Ethnic readymade pug, small batch XOXO Odd Future normcore kogi food truck craft beer single-origin coffee banh mi photo booth raw denim. XOXO messenger bag pug VHS. Forage gluten-free polaroid, twee hoodie chillwave Helvetica.</p>
+                                </figcaption>
+                                <img src="img/large/1.png" alt="img01"/>
+                            </figure>
+                        </li>
+                    </ul>
+                    <nav>
+                        <span class="icon nav-prev"></span>
+                        <span class="icon nav-next"></span>
+                        <span class="icon nav-close"></span>
+                    </nav>
+                    <div class="info-keys icon">Navigate with arrow keys</div>
+                </section><!-- // slideshow -->
+            </div><!-- // grid-gallery -->
+                
+                <div id="exp" class="row">
+                    <h2>Work Experience</h2>
+                    <h3>Freelance Contractor</h3>
+                    <span>Feb 2012 - Present</span>
+                    <p>Provided various IT professional services ranging from tech support and consulting to web development and design to any client both local and overseas. </p>
+                    <h3>MIS Administrator</h3>
+                    <span>July 2012 - August 2013</span>
+                    <p>Provided system consultancy services to a healthcare institution for implementing a computerized system to users of various profession both medical and clerical.</p>
+                    <h3>Systems Developer</h3>
+                    <span>Nov 2010 - Feb 2012</span>
+                    <p>Worked with a project management team that analyzed and develop a working computerized information for the industrial farming operations of the company doing</p>
+                    <h3>Junior Network Admin</h3>
+                    <span>Dec 2007 - Nov 2010</span>
+                    <p>Functioned as a technical coordinator handling major tech support activities across nationwide branches. Manned overall data center operations assisting in administering network operations and security of the bankwide information system.</p>
+                </div>
+                <div id="graph" class="row">
+                    <h2>myGraphs</h2>
+                    <div id="chart_pie"></div>
+                    <div id="chart_bar"></div>
+                    <div id="chart_column"></div>
+                    <div id="chart_line"></div>
+                </div>
+            </div>
+        </div>
+     
+    
+   
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->   
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
-
-        <!-- build:js scripts/plugins.js -->
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
-        <!-- endbuild -->
-
-        <!-- build:js({app,.tmp}) scripts/main.js -->
+    <!-- build:js scripts/fuck.js -->
+    <script src="bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="bower_components/highcharts.com/js/highcharts.src.js"></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/plugins.js -->
+    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
+    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
+    
+    <!-- endbuild -->
+    
+    <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+        <script src="scripts/imagesloaded.pkgd.min.js"></script>
+        <script src="scripts/masonry.pkgd.min.js"></script>
+        <script src="scripts/classie.js"></script>
+        <script src="scripts/cbpGridGallery.js"></script>
+        <script>
+            new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+        </script>
+    <!-- endbuild -->
+    
 </body>
 </html>
