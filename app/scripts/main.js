@@ -169,7 +169,7 @@ $(function () { //COLUMN CHART
                     'Adode Indesign',
                     'Adobe Illustrator',
                     'Adobe Dreamweaver',
-                    'Adobe Fireworks'
+                    'Adobe Muse'
                 ]
             },
             yAxis: {
@@ -202,7 +202,7 @@ $(function () { //COLUMN CHART
             },
                 series: [{
                 name: 'Proficiency Level',
-                data: [80, 40, 50, 70, 20]
+                data: [80, 40, 50, 70, 60]
     
             }]
         });
@@ -220,11 +220,11 @@ $(function () { //LINE CHART
                 marginBottom: 25
             },
             title: {
-                text: 'Utilized Software',
+                text: 'Utilized Apps and Frameworks',
                 x: -20 //center
             },
             xAxis: {
-                categories: ['2006', '2007','2008','2009','2010','2011','2012']
+                categories: ['2010','2011','2012','2013','2014','2015']
             },
             yAxis: {
                 title: {
@@ -251,29 +251,29 @@ $(function () { //LINE CHART
                 borderWidth: 0
             },
             series: [{
-                name: 'Netbeans IDE',
-                data: [0.0, 10.0, 20.0, 40.0, 0.0, 10.0, 50.0]
+                name: 'Wordpress',
+                data: [2.9, 15.0, 25.0, 45.0, 60.0, 80.0]
             }, {
-                name: 'Eclipse Juno',
-                data: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 10.0]
+                name: 'Yeoman',
+                data: [0.0, 0.0, 0.0, 0.5, 10.0, 25.0, 45.0]
             }, {
-                name: 'Win Visual Studio',
-                data: [20.0, 30.00, 0.0, 0.0, 0.0, 40.0, 60.0]
+                name: 'Github',
+                data: [0.0, 0.00, 0.0, 0.0, 5.0, 0.15, 45.0]
             }, {
-                name: 'Win SQLServer 2008',
-                data: [0.0, 0.0, 0.0, 0.0, 20.0, 75.0, 95.0]
+                name: 'Twitter Bootstrap',
+                data: [0.0, 0.0, 5.0, 10.0, 15.0, 30.0, 85.0]
             },{
-                name: 'Win Server 2008',
+                name: 'Angular JS',
                 data: [0.0, 0.0, 0.0, 0.0, 10.0, 50.0, 70.0]
             },{
-                name: 'Linux',
-                data: [0.0, 10.0, 30.0, 45.0, 55.0, 0.0, 0.0]
+                name: 'Chrome Dev Tools',
+                data: [0.0, 0.0, 0.8, 5.0, 10.0, 45.0, 75.0]
             },{
-                name: 'PHPMyAdmin',
-                data: [0.0, 0.0, 0.0, 10.0, 50.0, 70.0, 90.0]
+                name: 'Trello',
+                data: [0.0, 0.0, 0.0, 0.0, 25.0, 55.0, 80.0]
             },{
-                name: 'Notepad++',
-                data: [0.0, 0.0, 0.0, 20.0, 60.0, 75.0, 80.0]
+                name: 'Asana',
+                data: [0.0, 0.0, 0.0, 0.0, 15.0, 45.0, 60.0]
             }]
         });
     });

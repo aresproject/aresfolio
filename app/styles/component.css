@@ -28,10 +28,12 @@
 .grid-gallery figcaption h3 {
 	margin: 0;
 	padding: 0 0 0.5em;
+	color: rgb(2, 187, 175);
 }
 
 .grid-gallery figcaption p {
 	margin: 0;
+	color: #2B83AD;	
 }
 
 /* Grid style */
@@ -62,7 +64,7 @@
 }
 
 .grid figcaption {
-	background: #e4e4e4;
+    background: rgba(245, 245, 245, 0.63);
 	padding: 25px;
 }
 
